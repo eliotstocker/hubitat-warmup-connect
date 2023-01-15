@@ -1,0 +1,21 @@
+{
+    "packageName": "Warmup Connect",
+    "author": "Eliot Stocker",
+    "version": "1.0.0",
+    "minimumHEVersion": "0.0",
+    "dateReleased": "2023-01-15",
+    "releaseNotes": "See change log at: https://github.com/eliotstocker/hubitat-warmup-connect/blob/main/changelog.md",
+    "bundles": [
+        {
+            "id": "bf34aaac-54d9-48db-8c53-77291d1e4ced",
+            "name": "Warmup Connect",
+            "namespace": "tv.piratemedia",
+            "location": "https://github.com/eliotstocker/hubitat-warmup-connect/releases/latest/bundle.zip",
+            "required": true,
+            "oauth": false,
+            "primary": true
+        }
+    ],
+    "licenseFile": "https://github.com/eliotstocker/hubitat-warmup-connect/blob/main/LICENSE",
+    "documentationLink": "https://github.com/eliotstocker/hubitat-warmup-connect/blob/main/README.md"
+  }
