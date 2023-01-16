@@ -24,19 +24,17 @@ jobs:
           
       - name: Create Bunlde
         run: zip bundle.zip *.groovy *.txt
-
+        
       - name: Create Release
-        uses: actions/create-release@v1
+        uses: softprops/action-gh-release@v1
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
         env:
           GITHUB_TOKEN: ${{ secrets.github_token }}
         with:
-          tag_name: ${{ steps.changelog.outputs.tag }}
-          release_name: ${{ steps.changelog.outputs.tag }}
+          files: bundle.zip
           body: ${{ steps.changelog.outputs.clean_changelog }}
-          artifactErrorsFailBuild: true
-          makeLatest: true
-          artifacts: ${{ github.workspace }}\bundle.zip
+          tag_name: ${{ steps.changelog.outputs.tag }}
+          fail_on_unmatched_files: true
           
       - name: Push release to repo
         run: git push --follow-tags
