@@ -1,3 +1,12 @@
+## [1.0.13](https://github.com/eliotstocker/hubitat-warmup-connect/compare/v1.0.12...v1.0.13) (2023-01-16)
+
+
+### Bug Fixes
+
+* missed changing import after namespace change ([0c64295](https://github.com/eliotstocker/hubitat-warmup-connect/commit/0c6429512993942450e089d84cf66e04325e6e9f))
+
+
+
 ## [1.0.12](https://github.com/eliotstocker/hubitat-warmup-connect/compare/v1.0.11...v1.0.12) (2023-01-16)
 
 
@@ -26,10 +35,6 @@
 
 
 ## [1.0.9](https://github.com/eliotstocker/hubitat-warmup-connect/compare/v1.0.8...v1.0.9) (2023-01-16)
-
-
-
-## [1.0.8](https://github.com/eliotstocker/hubitat-warmup-connect/compare/v1.0.7...v1.0.8) (2023-01-16)
 
 
 
