@@ -20,6 +20,7 @@ jobs:
           version-file: './package-manifest.json'
           version-path: 'version'
           skip-on-empty: 'false'
+          git-push: false
           
       - name: Create Bunlde
         run: zip bundle.zip *.groovy *.txt
@@ -33,5 +34,9 @@ jobs:
           tag_name: ${{ steps.changelog.outputs.tag }}
           release_name: ${{ steps.changelog.outputs.tag }}
           body: ${{ steps.changelog.outputs.clean_changelog }}
+          artifactErrorsFailBuild: true
           makeLatest: true
           artifacts: bundle.zip
+          
+      - name: Push release to repo
+        run: git push --follow-tags
