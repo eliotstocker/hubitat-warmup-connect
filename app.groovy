@@ -326,7 +326,7 @@ def addThermostats() {
                 name: state.warmupDevices[device],
                 label: state.warmupDevices[device]
             ]
-            childDevice = addChildDevice("tv.piratemedia", "Warmup Thermostat", "$device", null, data)
+            childDevice = addChildDevice("tv.piratemedia.warmup", "Warmup Thermostat", "$device", null, data)
 
             logDebug "Created ${state.warmupDevices[device]} with id: ${device}"
         } else {
