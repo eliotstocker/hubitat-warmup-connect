@@ -25,6 +25,18 @@ jobs:
       - name: Create Bunlde
         run: zip bundle.zip *.groovy *.txt
         
+      - name: Update package manager Artifact Path
+        uses: jossef/action-set-json-field@v2.1
+        with:
+          file: package-manifest.json
+          field: bundles[0].location
+          value: "${{ github.server_url }}/${{ github.repository }}/releases/download/${{ steps.changelog.outputs.tag }}/bundle.zip"
+          
+      - name: Commit Manifest Change
+        run: |
+          git add package-manifest.json
+          git commit --amend --no-edit
+        
       - name: Create Release
         uses: softprops/action-gh-release@v1
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
