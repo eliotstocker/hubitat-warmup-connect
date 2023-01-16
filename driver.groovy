@@ -56,7 +56,7 @@ metadata {
 }
 
 
-#include tv.piratemedia.WarmupDefinitions
+#include tv.piratemedia.warmup.WarmupDefinitions
 
 
 def installed() {

@@ -39,7 +39,7 @@ preferences {
 }
 
 
-#include tv.piratemedia.WarmupDefinitions
+#include tv.piratemedia.warmup.WarmupDefinitions
 
 
 private getRestUrl() { URL_REST_ENDPOINT }
