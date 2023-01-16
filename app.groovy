@@ -21,7 +21,7 @@
 
 definition(
     name: "Warmup Connect",
-    namespace: "tv.piratemedia",
+    namespace: "tv.piratemedia.warmup",
     author: "Eliot Stocker",
     description: "Connect your Warmup devices to Hubitat.",
     category: "",

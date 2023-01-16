@@ -22,7 +22,7 @@ import groovy.time.TimeCategory
 
 
 metadata {
-    definition(name: "Warmup Thermostat", namespace: "tv.piratemedia", author: "Eliot Stocker", ocfDeviceType: "oic.d.thermostat", vid: "36a9d325-53b2-37e8-9376-ee404ac3259d") {
+    definition(name: "Warmup Thermostat", namespace: "tv.piratemedia.warmup", author: "Eliot Stocker", ocfDeviceType: "oic.d.thermostat", vid: "36a9d325-53b2-37e8-9376-ee404ac3259d") {
         capability "Actuator"
         capability "Polling"
         capability "Refresh"

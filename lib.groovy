@@ -20,7 +20,7 @@
 
 library (
     name: "WarmupDefinitions",
-    namespace: "tv.piratemedia",
+    namespace: "tv.piratemedia.warmup",
     author: "Eliot Stocker",
     category: "definitions",
     description: "Defintions for API requests against Warmup APIs (mostly GraphQL)",

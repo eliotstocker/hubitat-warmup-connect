@@ -9,8 +9,8 @@
     {
       "id": "bf34aaac-54d9-48db-8c53-77291d1e4ced",
       "name": "Warmup Connect",
-      "namespace": "tv.piratemedia",
       "location": "https://github.com/eliotstocker/hubitat-warmup-connect/releases/download/v1.0.11/bundle.zip",
+      "namespace": "tv.piratemedia.warmup",
       "required": true
     }
   ],
