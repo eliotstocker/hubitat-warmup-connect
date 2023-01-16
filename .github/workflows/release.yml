@@ -21,9 +21,12 @@ jobs:
           version-path: 'version'
           skip-on-empty: 'false'
           
-      - uses: montudor/action-zip@v1
+      - name: Create Bunlde
+        uses: thedoctor0/zip-release@0.7.0
         with:
-          args: zip -qq -r bundle.zip ./
+          type: 'zip'
+          filename: 'bundle.zip'
+          exclusions: '*.git* *.json *.md'
 
       - name: Create Release
         uses: actions/create-release@v1
