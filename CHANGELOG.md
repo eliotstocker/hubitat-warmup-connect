@@ -1,3 +1,12 @@
+## [1.0.14](https://github.com/eliotstocker/hubitat-warmup-connect/compare/v1.0.13...v1.0.14) (2023-01-16)
+
+
+### Bug Fixes
+
+* one more refactor issue ([0db529c](https://github.com/eliotstocker/hubitat-warmup-connect/commit/0db529c41be4dd21032a1181ed5f339776466d3e))
+
+
+
 ## [1.0.13](https://github.com/eliotstocker/hubitat-warmup-connect/compare/v1.0.12...v1.0.13) (2023-01-16)
 
 
@@ -31,10 +40,6 @@
 ### Bug Fixes
 
 * issue with manifest ([989b9f5](https://github.com/eliotstocker/hubitat-warmup-connect/commit/989b9f5d46f966486ec52a67e4615ea2b3b644df))
-
-
-
-## [1.0.9](https://github.com/eliotstocker/hubitat-warmup-connect/compare/v1.0.8...v1.0.9) (2023-01-16)
 
 
 
