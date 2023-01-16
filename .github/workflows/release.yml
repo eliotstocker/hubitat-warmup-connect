@@ -22,11 +22,7 @@ jobs:
           skip-on-empty: 'false'
           
       - name: Create Bunlde
-        uses: thedoctor0/zip-release@0.7.0
-        with:
-          type: 'zip'
-          filename: 'bundle.zip'
-          exclusions: '*.git* *.json *.md'
+        run: zip bundle.zip *.groovy *.txt
 
       - name: Create Release
         uses: actions/create-release@v1
