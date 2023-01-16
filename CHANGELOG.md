@@ -1,3 +1,12 @@
+## [1.0.5](https://github.com/eliotstocker/hubitat-warmup-connect/compare/v1.0.4...v1.0.5) (2023-01-16)
+
+
+### Bug Fixes
+
+* attempt to fix release bundle artifact ([9f90b34](https://github.com/eliotstocker/hubitat-warmup-connect/commit/9f90b34f75cc567c28ce4203fa26ae45ddab9a14))
+
+
+
 ## [1.0.4](https://github.com/eliotstocker/hubitat-warmup-connect/compare/v1.0.3...v1.0.4) (2023-01-16)
 
 
