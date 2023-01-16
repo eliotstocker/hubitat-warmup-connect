@@ -36,7 +36,7 @@ jobs:
           body: ${{ steps.changelog.outputs.clean_changelog }}
           artifactErrorsFailBuild: true
           makeLatest: true
-          artifacts: bundle.zip
+          artifacts: ${{ github.workspace }}\bundle.zip
           
       - name: Push release to repo
         run: git push --follow-tags
