@@ -1,3 +1,12 @@
+## [1.0.3](https://github.com/eliotstocker/hubitat-warmup-connect/compare/v1.0.2...v1.0.3) (2023-01-16)
+
+
+### Bug Fixes
+
+* further change to bundler in action ([704084f](https://github.com/eliotstocker/hubitat-warmup-connect/commit/704084f566b99f5b898e2f02b4e81f5b05e31b06))
+
+
+
 ## [1.0.2](https://github.com/eliotstocker/hubitat-warmup-connect/compare/v1.0.1...v1.0.2) (2023-01-16)
 
 
