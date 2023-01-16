@@ -19,16 +19,18 @@ jobs:
           github-token: ${{ secrets.github_token }}
           version-file: './package-manifest.json'
           version-path: 'version'
-          skip-on-empty: 'false'
           git-push: false
       
       - name: Create Bunlde
+        if: ${{ steps.changelog.outputs.skipped == 'false' }}
         run: zip bundle.zip *.groovy *.txt
       
       - name: Update package manager Artifact Path
+        if: ${{ steps.changelog.outputs.skipped == 'false' }}
         run: jq '.bundles[0].location = "${{ github.server_url }}/${{ github.repository }}/releases/download/${{ steps.changelog.outputs.tag }}/bundle.zip"' package-manifest.json > .tmp.json && mv .tmp.json package-manifest.json
       
       - name: Commit Manifest Change
+        if: ${{ steps.changelog.outputs.skipped == 'false' }}
         run: |
           git add package-manifest.json
           git commit --amend --no-edit
@@ -45,4 +47,5 @@ jobs:
           fail_on_unmatched_files: true
       
       - name: Push release to repo
+        if: ${{ steps.changelog.outputs.skipped == 'false' }}
         run: git push --follow-tags
