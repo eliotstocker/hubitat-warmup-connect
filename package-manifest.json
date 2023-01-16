@@ -4,7 +4,7 @@
   "version": "1.0.10",
   "minimumHEVersion": "0.0",
   "dateReleased": "2023-01-15",
-  "releaseNotes": "See change log at: https://github.com/eliotstocker/hubitat-warmup-connect/blob/main/changelog.md",
+  "releaseNotes": "See change log at: https://github.com/eliotstocker/hubitat-warmup-connect/blob/main/CHANGELOG.md",
   "bundles": [
     {
       "id": "bf34aaac-54d9-48db-8c53-77291d1e4ced",
@@ -14,6 +14,6 @@
       "required": true
     }
   ],
-  "licenseFile": "https://github.com/eliotstocker/hubitat-warmup-connect/blob/main/LICENSE",
+  "licenseFile": "https://raw.githubusercontent.com/eliotstocker/hubitat-warmup-connect/main/LICENSE",
   "documentationLink": "https://github.com/eliotstocker/hubitat-warmup-connect/blob/main/README.md"
 }
