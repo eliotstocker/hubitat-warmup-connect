@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        
+      
       - name: Conventional Changelog Action
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3
@@ -21,22 +21,18 @@ jobs:
           version-path: 'version'
           skip-on-empty: 'false'
           git-push: false
-          
+      
       - name: Create Bunlde
         run: zip bundle.zip *.groovy *.txt
-        
+      
       - name: Update package manager Artifact Path
-        uses: jossef/action-set-json-field@v2.1
-        with:
-          file: package-manifest.json
-          field: bundles[0].location
-          value: "${{ github.server_url }}/${{ github.repository }}/releases/download/${{ steps.changelog.outputs.tag }}/bundle.zip"
-          
+        run: jq '.bundles[0].location = "${{ github.server_url }}/${{ github.repository }}/releases/download/${{ steps.changelog.outputs.tag }}/bundle.zip"' package-manifest.json
+      
       - name: Commit Manifest Change
         run: |
           git add package-manifest.json
           git commit --amend --no-edit
-        
+      
       - name: Create Release
         uses: softprops/action-gh-release@v1
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
@@ -47,6 +43,6 @@ jobs:
           body: ${{ steps.changelog.outputs.clean_changelog }}
           tag_name: ${{ steps.changelog.outputs.tag }}
           fail_on_unmatched_files: true
-          
+      
       - name: Push release to repo
         run: git push --follow-tags
