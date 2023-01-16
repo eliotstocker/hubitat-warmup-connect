@@ -1,3 +1,12 @@
+## [1.0.11](https://github.com/eliotstocker/hubitat-warmup-connect/compare/v1.0.10...v1.0.11) (2023-01-16)
+
+
+### Bug Fixes
+
+* update links in package ([17a4f76](https://github.com/eliotstocker/hubitat-warmup-connect/commit/17a4f765374e39f9d1c7a4fd2433c64f2cc6be02))
+
+
+
 ## [1.0.10](https://github.com/eliotstocker/hubitat-warmup-connect/compare/v1.0.9...v1.0.10) (2023-01-16)
 
 
@@ -16,10 +25,6 @@
 
 
 ## [1.0.7](https://github.com/eliotstocker/hubitat-warmup-connect/compare/v1.0.6...v1.0.7) (2023-01-16)
-
-
-
-## [1.0.6](https://github.com/eliotstocker/hubitat-warmup-connect/compare/v1.0.5...v1.0.6) (2023-01-16)
 
 
 
